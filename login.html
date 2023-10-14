@@ -9,6 +9,31 @@
       padding: 0%;
     }
 
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: 50% 50%;
+      /* grid-template-rows: 300px 300px; */
+      /* border: 1px solid red; */
+    }
+
+    .item_2 {
+      /* grid-column: 1/3; */
+      /* margin: 10% 10% 0% 10%; */
+      grid-row: 2/3;
+      /* border: 1px solid green; */
+      /* display: grid; */
+      /* place-items: center; */
+    }
+
+    .item_1 {
+      /* grid-column: 1/1; */
+      grid-row: 1/1;
+      /* margin: 0% 5% 5% 5%; */
+      /* border: 1px solid green; */
+      /* display: grid; */
+      /* place-items: center; */
+    }
+
     form {
       /* border: 1 px solid blue; */
       padding: 10%;
@@ -41,16 +66,21 @@
 </head>
 
 <body>
-  <form action="">
-    <fieldset>
-      <legend>Login Here</legend><br><br>
-      <input type="text" placeholder="Your name here"><br>
-      <input type="email" placeholder="email id"><br>
-      <input type="password" placeholder="password"><br><br>
-      <input type="submit" name="buttonCook" id="buttonCook" value="Start Cooking"
-        style="background: transparent;color: orangered;font-weight: bold;"> <br>
-      <a href="./register.html"
-        style="display: grid; place-items: center; padding-bottom: 3%;text-decoration: none;">Register Here</a>
-    </fieldset>
-  </form>
+  <main class="container">
+    <form action="" class="item_1">
+      <fieldset>
+        <legend>Login Here</legend><br><br>
+        <input type="text" placeholder="Your name here"><br>
+        <input type="email" placeholder="email id"><br>
+        <input type="password" placeholder="password"><br><br>
+        <input type="submit" name="buttonCook" id="buttonCook" value="Start Cooking"
+          style="background: transparent;color: orangered;font-weight: bold;"> <br>
+        <a href="./register.html"
+          style="display: grid; place-items: center; padding-bottom: 3%;text-decoration: none;">Register Here</a>
+      </fieldset>
+    </form>
+    <section class="item_2">
+      <img src="./Images/let-s-cook-vector-illustration.jpg" alt="" style="height: 50%;width: auto;">
+    </section>
+  </main>
 </body>
