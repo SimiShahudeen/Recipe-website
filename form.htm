@@ -6,65 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Recipe</title>
   <link rel="icon" href="./Images/favicon.webp">
-  <style>
-    * {
-      margin: 0%;
-      padding: 0%;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 687px 687px;
-      /* border: 1px solid red; */
-    }
-
-    .item_1 {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      /* border: 1px solid green; */
-      display: grid;
-      place-items: center;
-    }
-
-    .item_2 {
-      grid-column: 2/3;
-      grid-row: 1/2;
-      margin: 5%;
-      /* border: 1px solid green; */
-      /* display: grid; */
-      /* place-items: center; */
-    }
-    
-    form {
-      /* border: 1 px solid blue; */
-      padding: 10%;
-      /* padding: 13%; */
-      width: 80%;
-    }
-
-    fieldset {
-      border: 2px;
-      border-radius: 10px;
-      background-color: rgba(255, 166, 0, 0.26);
-    }
-
-    legend {
-      font-size: large;
-      color: black;
-      margin-left: 10%;
-    }
-
-    input {
-      padding: 2%;
-      margin-bottom: 2%;
-      margin-left: 13%;
-      width: 70%;
-      border: 0;
-      font-family: 'Times New Roman', Times, serif;
-      font-size: medium;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -90,9 +32,14 @@
           <input type="password" placeholder="confirm password"><br><br>
           <input type="submit" name="buttonCook" id="buttonCook" value="Register Account"
             style="background: transparent;color: orangered;font-weight: bold;"> <br>
-          <a href="./index.htm" style="display: grid; place-items: center; padding-bottom: 3%;text-decoration: none;">Login Here</a>
+          <a href="./index.htm"
+            style="display: grid; place-items: center; padding-bottom: 3%;text-decoration: none;">Login Here</a>
         </fieldset>
       </form>
+      <div class="mainButtons">
+        <input type="button" value="Login" style="background-color: aquamarine;"> <br>
+        <input type="button" value="Register" style="background-color: gold;">
+      </div>
     </section>
   </main>
 </body>
